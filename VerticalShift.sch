@@ -1,0 +1,155 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx_IEEE:74LS595 U1
+U 1 1 5E9F546A
+P 5975 3325
+F 0 "U1" H 5975 4306 50  0000 C CNN
+F 1 "74LS595" H 5975 4215 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5975 3325 50  0001 C CNN
+F 3 "" H 5975 3325 50  0001 C CNN
+	1    5975 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J2
+U 1 1 5E9F7DBC
+P 6625 3725
+F 0 "J2" H 6597 3607 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 6597 3698 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 6625 3725 50  0001 C CNN
+F 3 "~" H 6625 3725 50  0001 C CNN
+	1    6625 3725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5E9F972D
+P 6625 4125
+F 0 "J3" H 6597 4057 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 6597 4148 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 6625 4125 50  0001 C CNN
+F 3 "~" H 6625 4125 50  0001 C CNN
+	1    6625 4125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J1
+U 1 1 5E9F9FFF
+P 4850 3050
+F 0 "J1" H 4958 3531 50  0000 C CNN
+F 1 "Conn_01x07_Male" H 4958 3440 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 4850 3050 50  0001 C CNN
+F 3 "~" H 4850 3050 50  0001 C CNN
+	1    4850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3350 5050 3725
+Wire Wire Line
+	5050 3725 5525 3725
+Wire Wire Line
+	5050 3250 5350 3250
+Wire Wire Line
+	5350 3250 5350 3125
+Wire Wire Line
+	5350 3125 5525 3125
+Wire Wire Line
+	5050 3150 5300 3150
+Wire Wire Line
+	5300 3150 5300 3025
+Wire Wire Line
+	5300 3025 5525 3025
+Wire Wire Line
+	5050 3050 5275 3050
+Wire Wire Line
+	5275 3050 5275 2875
+Wire Wire Line
+	5275 2875 5525 2875
+Wire Wire Line
+	5050 2950 5200 2950
+Wire Wire Line
+	5200 2950 5200 2775
+Wire Wire Line
+	5200 2775 5525 2775
+$Comp
+L power:GND #PWR0101
+U 1 1 5E9FBBD8
+P 5050 2850
+F 0 "#PWR0101" H 5050 2600 50  0001 C CNN
+F 1 "GND" V 5055 2722 50  0000 R CNN
+F 2 "" H 5050 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5E9FC511
+P 5050 2750
+F 0 "#PWR0102" H 5050 2600 50  0001 C CNN
+F 1 "VCC" H 5067 2923 50  0000 C CNN
+F 2 "" H 5050 2750 50  0001 C CNN
+F 3 "" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5E9FCF70
+P 6825 2875
+F 0 "C1" H 6917 2921 50  0000 L CNN
+F 1 "C_Small" H 6917 2830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6825 2875 50  0001 C CNN
+F 3 "~" H 6825 2875 50  0001 C CNN
+	1    6825 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E9FD4D4
+P 6825 2975
+F 0 "#PWR0103" H 6825 2725 50  0001 C CNN
+F 1 "GND" H 6830 2802 50  0000 C CNN
+F 2 "" H 6825 2975 50  0001 C CNN
+F 3 "" H 6825 2975 50  0001 C CNN
+	1    6825 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 5E9FDEF2
+P 6825 2775
+F 0 "#PWR0104" H 6825 2625 50  0001 C CNN
+F 1 "VCC" H 6842 2948 50  0000 C CNN
+F 2 "" H 6825 2775 50  0001 C CNN
+F 3 "" H 6825 2775 50  0001 C CNN
+	1    6825 2775
+	1    0    0    -1  
+$EndComp
+Text Label 5050 3250 0    50   ~ 0
+SCLK
+Text Label 5050 3150 0    50   ~ 0
+~RST
+Text Label 5050 3050 0    50   ~ 0
+RCLK
+Text Label 5050 2950 0    50   ~ 0
+~OE
+Text Label 5525 3725 0    50   ~ 0
+SER
+Text Label 6425 4025 0    50   ~ 0
+7
+$EndSCHEMATC
